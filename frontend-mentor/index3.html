@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Frontend Mentor | Multi-step form</title>
+       <!-- Inclusion des fichiers nécessaires-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="style/style3.css">
+    <script src="scripts/script3.js" defer></script>
+
+</head>
+<body>
+    <!-- HEADER -->
+    <header>
+        
+    </header>
+
+    <!-- MAIN -->
+    <main>
+
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="image-container">
+                        <img src="assets/images/bg-sidebar-desktop.svg" class="img-thumbnail border-0" alt="Responsive image">
+                        <div class="overlay-text">
+                            <div class="step1">
+                                <span class="badge badge-secondary p-2 rounded-circle badge-step1">1</span>
+                                <span class="ml-2">STEP 1</span>
+                                <h6><b>YOUR INFO</b></h6>
+                            </div>
+                            <div class="step2">
+                                <span class="badge badge-secondary p-2 rounded-circle badge-step2">2</span>
+                                <span class="ml-2">STEP 2</span>
+                                <h6><b>SELECT PLAN</b></h6>
+                            </div>
+                            <div class="step3">
+                                <span class="badge badge-secondary p-2 rounded-circle badge-step3">3</span>
+                                <span class="ml-2">STEP 3</span>
+                                <h6><b>ADD-ONS</b></h6>
+                            </div>
+                            <div class="step4">
+                                <span class="badge badge-secondary p-2 rounded-circle badge-step4">4</span>
+                                <span class="ml-2">STEP 4</span>
+                                <h6><b>SUMMARY</b></h6>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-md-8">
+                    <div class="information">
+                        <div class="Personal"><h1>Pick add-ons</h1></div>
+                        <div id="passwordHelpBlock" class="form-text">
+                            Add-ons help enhance your gaming experience 
+                        </div><br>
+                        <div class="container">
+                            <div class="row">
+                              <div class="col">
+                                <div class="my-div">
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" checked>
+                                        <label class="form-check-label" for="flexCheckChecked">
+                                          <b>Online service </b> 
+                                        </label>
+                                            <p>Access to multiplayer games</p>
+                                            <h6>+$1/mo</h6>
+                                      </div>
+                                </div>
+                              </div>
+                            </div>
+                          
+                            <div class="row">
+                              <div class="col">
+                                <div class="my-div">
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" checked>
+                                        <label class="form-check-label" for="flexCheckChecked">
+                                          <b>Larger storage </b> 
+                                        </label>
+                                            <p>Extra 1TB of cloud save</p>
+                                            <h6> <span class="text-muted"> +$2/mo</span></h6>
+                                      </div>
+                                </div>
+                              </div>
+                            </div>
+                          
+                            <div class="row">
+                              <div class="col">
+                                <div class="my-div1">
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                                        <label class="form-check-label" for="flexCheckDefault">
+                                            <b>Customizable profile</b>
+                                        </label>
+                                            <p>custom theme on your profile</p>
+                                            <h6>+$3/mo</h6>
+                                      </div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                          
+                        <form info>
+                            <div class="bouton">
+                                <button type="button" class="btn btn-primary" onclick="redirectToNextStep()">Next Step</button>
+                            </div>
+                            <div class="retour">
+                                <button type="button" class="btn btn-link text-dark" onclick="redirectToNextStep2()"><b>Go Back</b></button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+
+    </main>
+
+    <!-- FOOTER -->
+    <footer>
+        
+    </footer>
+
+</body>
+</html>

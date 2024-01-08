@@ -1,0 +1,133 @@
+
+    body {
+      font-family: 'Arial', sans-serif;
+      margin: 0;
+
+      padding: 0;
+      background-color: #f4f4f4
+;
+      color: #333;
+    }
+
+    header {
+      background-color: #2c3e50;
+      color: #fff;
+      padding: 10px;
+      text-align: center;
+    }
+
+    .container {
+      display: flex;
+      justify-content: space-between;
+      margin: 20px;
+    }
+
+    .sidebar {
+      width: 20%;
+      background-color: #34495e;
+      color: #fff;
+      padding: 20px;
+    }
+
+    .steps {
+      font-size: 18px;
+      margin-bottom: 10px;
+    }
+
+    .step-content {
+      padding: 10px;
+    }
+
+    .content {
+      width: 75%;
+      padding: 20px;
+      background-color: #fff;
+      border-radius: 5px;
+    }
+
+    h2 {
+      font-size: 24px;
+      margin-bottom: 10px;
+    }
+
+    form {
+      display: flex;
+      flex-direction: column;
+    }
+
+    label {
+      margin-bottom: 5px;
+    }
+
+    input, select {
+      width: 100%;
+      padding: 8px;
+      margin-bottom: 15px;
+      box-sizing: border-box;
+    }
+
+    button {
+      background-color: #3498db;
+      color: #fff;
+      padding: 10px;
+      border: none;
+      cursor: pointer;
+      border-radius: 3px;
+    }
+
+    .attribution {
+      margin-top: 20px;
+      text-align: center;
+    }
+
+
+    .step-number-sidebar {
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  background-color: #3498db;
+  color: #fff;
+  text-align: center;
+  line-height: 20px;
+  border-radius: 50%;
+  margin-right: 10px;
+  font-weight: bold;
+  border: 2px solid #3498db;
+  }
+
+  .step-text-uppercase {
+  text-transform: uppercase;
+}
+
+.button-container {
+  display: flex;
+  justify-content: space-between;
+}
+
+/* Ajoutez ces styles pour ajuster les boutons si nécessaire */
+.go-back-btn {
+  background-color: #3498db;
+  color: #fff;
+  padding: 10px;
+  border: none;
+  cursor: pointer;
+  border-radius: 3px;
+}
+
+.confirm-btn {
+  background-color: #2ecc71;
+  color: #fff;
+  padding: 10px;
+  border: none;
+  cursor: pointer;
+  border-radius: 3px;
+}
+
+.hidden-step {
+  display: none;
+}
+
+
+
+
+  

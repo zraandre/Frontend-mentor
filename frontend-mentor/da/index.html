@@ -1,0 +1,389 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <title>Frontend Mentor | Multi-step form</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="style/style.css">
+    <script src="scripts/script.js" defer></script>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  
+</head>
+<body>
+  <header>
+    <h1>Multi-step Form</h1>
+  </header>
+
+  <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        .container {
+            display: flex;
+        }
+
+        .sidebar {
+            flex: 1; /* La barre latérale occupe 1/3 de la largeur */
+            padding: 20px;
+            background-color: #f0f0f0;
+        }
+
+        .image {
+            margin-bottom: 20px;
+        }
+
+        .content {
+            flex: 2; /* La partie du contenu occupe 2/3 de la largeur */
+            padding: 20px;
+        }
+
+        /* Ajoutez du style pour le formulaire, etc. selon vos besoins */
+        .step-content {
+            /* Ajoutez votre style pour la mise en page du formulaire ici */
+        }
+
+        .step-number-circle {
+    display: inline-block;
+    width: 25px;
+    height: 25px;
+    background-color: #fff; /* Couleur du cercle */
+    border: 2px solid #000; /* Couleur de la bordure du cercle */
+    border-radius: 50%; /* Pour créer un cercle avec des coins arrondis */
+    text-align: center;
+    line-height: 25px;
+    margin-right: 10px; /* Espacement entre le cercle et le texte */
+}
+.billing-options {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    #nextButton {
+        background-color: blue; /* Couleur de fond bleue */
+        color: white; /* Texte en blanc */
+        padding: 10px 20px; /* Ajoutez un espace autour du texte du bouton */
+        border: none; /* Supprimez la bordure par défaut */
+        cursor: pointer; /* Changez le curseur lorsqu'il survole le bouton */
+        border-radius: 5px; /* Ajoutez des coins arrondis au bouton */
+    }
+
+    #nextButton:hover {
+        background-color: darkblue; /* Changez la couleur de fond lorsqu'il survole le bouton */
+    }
+
+    
+
+    </style>
+    <title>Multi-step Form</title>
+</head>
+<body>
+
+<div class="container">
+    <div class="sidebar">
+      <div class="image" style="position: relative;">
+        <img src="assets/images/bg-sidebar-desktop.svg" class="img-responsive center-block" alt="Responsive image">
+    
+        <!-- Ajoutez les étapes sur l'image -->
+        <div class="step-overlay" style="position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%);">
+          <div class="steps" style="margin-bottom: 20px; display: flex; align-items: center;">
+            <span class="step-number-sidebar" style="border: 2px solid #000; border-radius: 50%; padding: 5px; margin-right: 5px;">1</span>
+            <div>
+                Step
+                <br>
+                Your info
+            </div>
+        </div>
+        <div class="steps" style="margin-bottom: 20px; display: flex; align-items: center;">
+          <span class="step-number-sidebar" style="border: 2px solid #000; border-radius: 50%; padding: 5px; margin-right: 5px;">2</span>
+          <div>
+              Step
+              <br>
+              Select plan
+          </div>
+      </div>
+      
+      <div class="steps" style="margin-bottom: 20px; display: flex; align-items: center;">
+          <span class="step-number-sidebar" style="border: 2px solid #000; border-radius: 50%; padding: 5px; margin-right: 5px;">3</span>
+          <div>
+              Step
+              <br>
+              Add-ons
+          </div>
+      </div>
+      
+      <div class="steps" style="display: flex; align-items: center;">
+          <span class="step-number-sidebar" style="border: 2px solid #000; border-radius: 50%; padding: 5px; margin-right: 5px;">4</span>
+          <div>
+              Step
+              <br>
+              Summary
+          </div>
+      </div>
+      
+        
+            
+        </div>
+    </div>
+    
+    </div>
+    <div class="content">
+        <!-- Step 1 start -->
+        <div class="step-content step-1">
+            <h1>Personal info</h1>
+            <p style="font-style: italic;">Please provide your name, email address, and phone number.</p>
+
+            <form>
+                <div class="mb-3">
+
+                  <label for="name" class="form-label">Name</label>
+                  <input type="name" class="form-control" id="exampleInputName"  aria-describedby="namehelp" >
+                <div class="mb-3">
+                  <label for="exampleInputEmail1" class="form-label">Email address</label>
+                  <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                </div>
+                <div class="mb-3">
+                  <label for="examplePhoneNumber" class="form-label">Phone Number</label>
+                  <input type="phonenumber" class="form-control" id="+237 694 136 757">
+                </div>
+                
+                <button type="submit" class="btn btn-primary">Submit</button>
+              
+                <!-- <label for="name"><h3>Name</h3></label><br>
+                <input type="text" id="name" name="name" placeholder="e.g. ZRA ANDRE"> <br>
+              
+                <label for="email"><h3>Email Address</h3></label><br>
+                <input type="email" id="email" name="email" placeholder="e.g. zraandre001@gmail.com">
+                <br>
+                <label for="phone"><h3>Phone Number</h3></label><br>
+                <input type="tel" id="phone" name="phone" placeholder="e.g. +237 694 136 757"><br>
+                <div class="button-container"><br>
+                  <button type="button" onclick="nextStep(2)" style="background-color: blue; color: white;">Next Step</button>
+
+                </div> -->
+            </form>
+        </div>
+    </div>
+</div>
+
+
+
+<!-- Step 2 start -->
+            
+ <div class="content">
+  <form>
+    <div class="container">
+      <div class="sidebar">
+          <!-- Ajoutez les étapes au-dessus de l'image -->
+  
+          <div class="image" style="position: relative;">
+              <img src="assets/images/bg-sidebar-desktop.svg" class="img-responsive center-block" alt="Responsive image">
+          </div>
+      </div>
+
+      
+  
+      <div class="content">
+        
+          <form>
+            
+              <h1>Select your plan</h1>
+              <p>You have the option of monthly or yearly billing</p>
+  
+              <select id="plan" name="plan">
+                  <option value="arcade">$9/mo - Arcade</option>
+              </select><br>
+              <select name="plan" id="plan">
+                <option value="advanced">$12/mo - Advanced</option>
+              </select><br>
+               <select name="plan" id="plan">
+                  <option value="pro">$15/mo - Pro</option>
+              </select><br>
+              <br>
+              <select id="billing" name="billing">
+                  <option value="monthly">Monthly</option>
+              </select>
+              <select name="billing" id="billing">
+                <option value="yearly">Yearly</option>
+              </select>
+              <br> 
+  
+              <div class="button-container">
+                  <button type="button" onclick="nextStep(3)">Next Step</button>
+                  <button type="button" onclick="goBack(1)">Go Back</button>
+              </div>
+          </form>
+      </div>
+  </div>
+  
+  </form>
+</div> 
+
+
+</body>
+</html>
+
+
+      <!-- Step 1 end -->
+
+
+   <!--    <div class="step-content step-2 hidden-step">
+        <h2>Select your plan</h2>
+
+        <form>
+          <img src="assets/images/bg-sidebar-desktop.svg" class="img-responsive center-block" alt="Responsive image">
+    
+          <style>
+            .container {
+                display: flex;
+            }
+    
+            .sidebar {
+                flex: 1; /* La barre latérale occupe 1/3 de la largeur */
+                padding: 20px;
+                background-color: #f0f0f0;
+            }
+    
+            .image {
+                margin-bottom: 20px;
+            }
+    
+            .content {
+                flex: 2; /* La partie du contenu occupe 2/3 de la largeur */
+                padding: 20px;
+            }
+    
+            /* Ajoutez du style pour le formulaire, etc. selon vos besoins */
+            .step-content {
+                /* Ajoutez votre style pour la mise en page du formulaire ici */
+            }
+    
+            /* Ajoutez d'autres styles CSS au besoin */
+        </style> -->
+
+    
+    
+    
+        
+            <!-- Step 2 start -->
+            <!-- Contenu de la page unique -->
+ <!-- <div class="content">
+  <img src="assets/images/bg-sidebar-desktop.svg" class="img-responsive center-block" alt="Responsive image">
+
+  <form>
+      <label for="plan">Choose your plan</label><br> 
+      <select id="plan" name="plan">
+          <option value="arcade">$9/mo - Arcade</option>
+          <option value="advanced">$12/mo - Advanced</option>
+          <option value="pro">$15/mo - Pro</option>
+      </select>
+      <br>
+
+      <label for="billing">Billing interval</label>
+      <select id="billing" name="billing">
+          <option value="monthly">Monthly</option>
+          <option value="yearly">Yearly</option>
+      </select>
+      <br> 
+
+      <div class="button-container">
+          <button type="button" onclick="nextStep(3)">Next Step</button>
+          <button type="button" onclick="goBack(1)">Go Back</button>
+      </div>
+  </form>
+</div> -->
+
+    
+    
+
+    
+      <!-- Step 2 end -->
+      
+      <!-- Step 3 start -->
+   <!--    <div class="step-content step-3 hidden-step">
+        <img src="assets/images/bg-sidebar-desktop.svg" class="img-responsive center-block" alt="Responsive image">
+        <h2>Pick add-ons</h2>
+        <form>
+          <label for="online-service">
+            <input type="checkbox" id="online-service" name="online-service" value="1">
+            Online service
+            +$1/mo
+          </label>
+      
+          <label for="larger-storage">
+            <input type="checkbox" id="larger-storage" name="larger-storage" value="2">
+            Larger storage
+            +$2/mo
+          </label>
+      
+          <label for="customizable-profile">
+            <input type="checkbox" id="customizable-profile" name="customizable-profile" value="2">
+            Customizable Profile
+            +$2/mo
+          </label>
+        <form class="button-container">
+          <button type="button" onclick="goBack(2)">Go Back</button>
+          <button type="button" onclick="nextStep(4)">Next Step</button>
+          
+        </form>
+      </div> -->
+      <!-- Step 3 end -->
+
+      <!-- Step 4 start -->
+ <div class="step-content step-4 hidden-step" >
+  <img src="assets/images/bg-sidebar-desktop.svg" class="img-responsive center-block" alt="Responsive image">
+  <h2>Finishing up</h2>
+
+  <p>Total (per month/year): $<span id="totalAmount">0</span></p>
+  <form class="button-container">
+    <button type="button" onclick="goBack(3)">Go Back</button>
+    <button type="button" onclick="nextStep(5)">Confirm</button>
+  </form>
+</div> 
+
+
+<!-- Step 5 start -->
+<div class="step-content">
+  
+  <h2>Thank you!</h2>
+  <p>Thanks for confirming your subscription! We hope you have fun using our platform. If you ever need support, please feel free to email us at zraandre001@gmail.com.</p>
+</div> 
+<!-- Step 5 end -->
+
+ <!-- Votre balise attribution -->
+  <!-- ... -->
+
+   <script>
+    function nextStep(stepNumber) {
+      hideAllSteps();
+      document.querySelector('.step-' + stepNumber).classList.remove('hidden-step');
+    }
+
+    function goBack(stepNumber) {
+      hideAllSteps();
+      document.querySelector('.step-' + stepNumber).classList.remove('hidden-step');
+    }
+
+    function hideAllSteps() {
+      const allSteps = document.querySelectorAll('.step-content');
+      allSteps.forEach(step => {
+        step.classList.add('hidden-step');
+      });
+    }
+  </script>   
+  
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="#">ZRA ANDRE</a>.</html>
+
+  </div> 
+</body>
+</html>

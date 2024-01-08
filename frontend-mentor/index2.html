@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Frontend Mentor | Multi-step form</title>
+       <!-- Inclusion des fichiers nécessaires-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="style/style2.css">
+    <script src="scripts/script2.js" defer></script>
+
+</head>
+<body>
+    <!-- HEADER -->
+    <header>
+        
+    </header>
+
+    <!-- MAIN -->
+    <main>
+
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="image-container">
+                        <img src="assets/images/bg-sidebar-desktop.svg" class="img-thumbnail border-0" alt="Responsive image">
+                        <div class="overlay-text">
+                            <div class="step1">
+                                <span class="badge badge-secondary p-2 rounded-circle badge-step1">1</span>
+                                <span class="ml-2">STEP 1</span>
+                                <h6><b>YOUR INFO</b></h6>
+                            </div>
+                            <div class="step2">
+                                <span class="badge badge-secondary p-2 rounded-circle badge-step2">2</span>
+                                <span class="ml-2">STEP 2</span>
+                                <h6><b>SELECT PLAN</b></h6>
+                            </div>
+                            <div class="step3">
+                                <span class="badge badge-secondary p-2 rounded-circle badge-step3">3</span>
+                                <span class="ml-2">STEP 3</span>
+                                <h6><b>ADD-ONS</b></h6>
+                            </div>
+                            <div class="step4">
+                                <span class="badge badge-secondary p-2 rounded-circle badge-step4">4</span>
+                                <span class="ml-2">STEP 4</span>
+                                <h6><b>SUMMary</b></h6>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-md-8">
+                    <div class="information">
+                        <div class="Personal"><h2>Select your plan</h2></div>
+                        <div id="passwordHelpBlock" class="form-text">
+                            You have the option of monthly or yearly billing
+                        </div><br>
+                        <div class="row">
+                            <div class="col-md-4">
+                                <div class="box">
+                                    <img src="assets/images/icon-arcade.svg" alt="Bootstrap" width="32" height="32">
+                                    <h5><strong>Arcade</strong></h5>
+                                    <p>$9/mo</p>
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="box">
+                                    <img src="assets/images/icon-advanced.svg" alt="Bootstrap" width="32" height="32">
+                                    <h5><strong>Advanced</strong></h5>
+                                    <p>$12/mo</p>
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="box">
+                                    <img src="assets/images/icon-pro.svg" alt="Bootstrap" width="32" height="32">
+                                    <h5><strong>Pro</strong></h5>
+                                    <p>$15/mo</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="container mt-5">
+                            <div class="row">
+                              <div class="col-md-6">
+                                <div class="radio d-flex justify-content-center align-items-center btradio">
+                                  <label class="mr-3">Monthly</label>
+                                  <div class="btn-group btn-group-toggle" data-toggle="buttons">
+            
+                                    <label class="btn btn-secondary active">
+                                      <input type="radio" name="options" id="monthly" autocomplete="off" checked> 
+                                    </label>
+                                    <label class="btn btn-secondary">
+                                      <input type="radio" name="options" id="yearly" autocomplete="off"> 
+                                    </label>
+                                  </div>
+                                  <label class="ml-3">Yearly</label>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        <form info>
+                            <div class="bouton">
+                                <button type="button" class="btn btn-primary" onclick="redirectToNextStep()">Next Step</button>
+                            </div>
+                            <div class="retour">
+                                <button type="button" class="btn btn-link text-dark" onclick="redirectToNextStep2()"><b>Go Back</b></button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+
+    </main>
+
+    <!-- FOOTER -->
+    <footer>
+        
+    </footer>
+
+</body>
+</html>

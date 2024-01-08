@@ -1,0 +1,141 @@
+/* style.css */
+
+/* Conteneur parent pour l'image et le texte */
+.image-container {
+  position: relative;
+  display: inline-block; /* Permet de limiter la largeur au contenu */
+  top: 70px;
+}
+
+/* Style de l'image */
+.image-container img {
+  width: 100%; /* Pour occuper la largeur du conteneur parent */
+  height: 100%; /* Pour maintenir le ratio d'aspect de l'image */
+  display: block; /* Pour résoudre le problème de l'espace réservé sous l'image */
+}
+
+.badge-step1 {
+  background-color: transparent;
+  color: rgb(250, 245, 245);
+  border: 1px solid white;
+  border-radius: 50%;
+  padding: 0.5em;
+  font-size: 1em;
+}
+
+.badge-step2 {
+  background-color: rgb(200, 238, 195);
+  color: rgb(26, 24, 24);
+  border: 1px solid white;
+  border-radius: 50%;
+  padding: 0.5em;
+  font-size: 1em;
+}
+
+.badge-step3 {
+  background-color: transparent;
+  color: rgb(250, 245, 245);
+  border: 1px solid white;
+  border-radius: 50%;
+  padding: 0.5em;
+  font-size: 1em;
+}
+
+.badge-step4 {
+  background-color: transparent;
+  color: rgb(250, 245, 245);
+  border: 1px solid white;
+  border-radius: 50%;
+  padding: 0.5em;
+  font-size: 1em;
+}
+
+/* Style du texte d'étape */
+.overlay-text h6 {
+  font-size: 16px;
+  margin-left: 35px;
+}
+
+.ml-2{
+  color: #555;
+}
+
+.step1{
+  position: absolute;
+  top: 10%;
+  left: 35%;
+  transform: translate(-50%, -50%);
+  color: white;
+}
+
+.step2{
+  position: absolute;
+  top: 25%;
+  left: 38%;
+  transform: translate(-50%, -50%);
+  color: white;
+}
+
+.step3{
+  position: absolute;
+  top: 39%;
+  left: 32%;
+  transform: translate(-50%, -50%);
+  color: white;
+}
+
+.step4{
+  position: absolute;
+  top: 56%;
+  left: 32%;
+  transform: translate(-50%, -50%);
+  color: white;
+}
+
+.information{
+  position: absolute;
+  top: 20%;
+}
+
+.bouton{
+  position: absolute;
+  top: 110%;
+  left: 83%;
+}
+
+.retour{
+  position: absolute;
+  top: 110%;
+}
+
+.box {
+  background-color: white;
+  border: 1px solid rgb(212, 211, 211);
+  padding: 10px;
+  margin: 5px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  height: 170px;
+  width: 180px;  
+}
+
+.btradio{
+  background-color: rgb(234, 241, 233);
+  border: 1px solid rgb(234, 241, 233);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  margin: 10px;
+  border-radius: 8px;
+  margin-top: -15px;
+  height: 40px;
+  width: 590px;  
+}
+
+.box h5{
+  position: absolute;
+  margin-top: 30%;
+}
+
+.box p{
+  position: absolute;
+  margin-top: 40%;
+}

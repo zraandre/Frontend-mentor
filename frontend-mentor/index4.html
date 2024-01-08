@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Frontend Mentor | Multi-step form</title>
+       <!-- Inclusion des fichiers nécessaires-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="style/style4.css">
+    <script src="scripts/script4.js" defer></script>
+
+</head>
+<body>
+    <!-- HEADER -->
+    <header>
+        
+    </header>
+
+    <!-- MAIN -->
+    <main>
+
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="image-container">
+                        <img src="assets/images/bg-sidebar-desktop.svg" class="img-thumbnail border-0" alt="Responsive image">
+                        <div class="overlay-text">
+                            <div class="step1">
+                                <span class="badge badge-secondary p-2 rounded-circle badge-step1">1</span>
+                                <span class="ml-2">STEP 1</span>
+                                <h6><b>YOUR INFO</b></h6>
+                            </div>
+                            <div class="step2">
+                                <span class="badge badge-secondary p-2 rounded-circle badge-step2">2</span>
+                                <span class="ml-2">STEP 2</span>
+                                <h6><b>SELECT PLAN</b></h6>
+                            </div>
+                            <div class="step3">
+                                <span class="badge badge-secondary p-2 rounded-circle badge-step3">3</span>
+                                <span class="ml-2">STEP 3</span>
+                                <h6><b>ADD-ONS</b></h6>
+                            </div>
+                            <div class="step4">
+                                <span class="badge badge-secondary p-2 rounded-circle badge-step4">4</span>
+                                <span class="ml-2">STEP 4</span>
+                                <h6><b>SUMMARY</b></h6>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-md-8">
+                    <div class="information">
+                        <div class="Personal"><h1>Finishing up</h1></div>
+                        <div id="passwordHelpBlock" class="form-text">
+                            Double-check everything looks OK before confirming
+                        </div><br>
+                        <table class="table">
+                            <tbody>
+                              <tr>
+                                <th scope="col">Arcade (Monthly)<br> <button type="button" class="btn btn-link ">Change</button></th>
+                                <th scope="col">$9/mo</th>
+                              </tr>
+                            </tbody>
+                            <tbody>
+                              <tr>
+                                <td scope="row">Online service<br>Larger storage</td>
+                                <td>+$1/mo<br>+$2/mo</td>
+                              </tr>
+                            </tbody>
+                        </table> 
+                        <table class="tab">
+                            <tbody>
+                                <tr>
+                                <td scope="col">total (per month) </td>
+                                <td><h4 style="color: blue;">+$12/mo</h4></td>
+                                </tr>
+                            </tbody>
+                        </table>
+
+                        <form info>
+                            <div class="bouton">
+                                <button type="button" class="btn btn-primary" onclick="redirectToNextStep()">Confirm</button>
+                            </div>
+                            <div class="retour">
+                                <button type="button" class="btn btn-link text-dark" onclick="redirectToNextStep2()">Go Back</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+
+    </main>
+
+    <!-- FOOTER -->
+    <footer>
+        
+    </footer>
+
+</body>
+</html>

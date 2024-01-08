@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+  <link rel="stylesheet" href="styles/main.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" integrity="sha384-rbs5RHz+8Fz1aOGqzKbzO8r+NZXyFfDpFe0VpavHr2uqz2q1uMAHr5Dh5c5cM6N" crossorigin="anonymous">
+  <script src="scripts/script.js" defer></script>
+
+  <title>Frontend Mentor | Multi-step form</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    body {
+      font-family: 'Arial', sans-serif;
+      margin: 0;
+
+      padding: 0;
+      background-color: #f4f4f4
+;
+      color: #333;
+    }
+
+    header {
+      background-color:#2ecc71;
+      color: #fff;
+      padding: 10px;
+      text-align: center;
+    }
+
+    .container {
+      display: flex;
+      justify-content: space-between;
+      margin: 20px;
+    }
+
+    .sidebar {
+      width: 20%;
+      background-color: hwb(227 2% 45%);
+      color: #fff;
+      padding: 20px;
+    }
+
+    .steps {
+      font-size: 18px;
+      margin-bottom: 10px;
+    }
+
+    .step-content {
+      padding: 10px;
+    }
+
+    .content {
+      width: 75%;
+      padding: 20px;
+      background-color: #fff;
+      border-radius: 5px;
+    }
+
+    h2 {
+      font-size: 24px;
+      margin-bottom: 10px;
+    }
+
+    form {
+      display: flex;
+      flex-direction: column;
+    }
+
+    label {
+      margin-bottom: 5px;
+    }
+
+    input, select {
+      width: 100%;
+      padding: 8px;
+      margin-bottom: 15px;
+      box-sizing: border-box;
+    }
+
+    button {
+      background-color: #19205c;
+      color: #fff;
+      padding: 10px;
+      border: none;
+      cursor: pointer;
+      border-radius: 3px;
+    }
+
+    .attribution {
+      margin-top: 20px;
+      text-align: center;
+    }
+
+
+    .step-number-sidebar {
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  background-color: #112a57;
+  color: #fff;
+  text-align: center;
+  line-height: 20px;
+  border-radius: 50%;
+  margin-right: 10px;
+  font-weight: bold;
+  border: 2px solid #221636;
+  }s
+
+  .step-text-uppercase {
+  text-transform: uppercase;
+}
+
+.button-container {
+  display: flex;
+  justify-content: space-between;
+}
+
+/* Ajoutez ces styles pour ajuster les boutons si nécessaire */
+.go-back-btn {
+  background-color: #3498db;
+  color: #fff;
+  padding: 10px;
+  border: none;
+  cursor: pointer;
+  border-radius: 3px;
+}
+
+.confirm-btn {
+  background-color: #2ecc71;
+  color: #fff;
+  padding: 10px;
+  border: none;
+  cursor: pointer;
+  border-radius: 3px;
+}
+
+.hidden-step {
+  display: none;
+}
+
+
+
+
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Multi-step Form</h1>
+  </header>
+
+  <div class="container">
+    
+    <div class="sidebar">
+      <div class="image">
+       <img src="assets/images/bg-sidebar-desktop.svg" class="img-responsive center-block" alt="Responsive image">
+      
+    </div>
+    <div class="content">
+      
+      <!-- Step 1 start -->
+      <div class="step-content step-1">
+        <h2>Personal info</h2>
+        <form>
+          <label for="name">Name</label>
+          <input type="text" id="name" name="name" placeholder="e.g. ZRA ANDRE">
+
+          <label for="email">Email Address</label>
+          <input type="email" id="email" name="email" placeholder="e.g. zraandre001@gmail.com">
+
+          <label for="phone">Phone Number</label>
+          <input type="tel" id="phone" name="phone" placeholder="e.g. +237 694 136 757">
+          <form class="button-container">
+           <button type="button" onclick="nextStep(2)">Next Step</button>
+          </form>
+        </form>
+      </div>
